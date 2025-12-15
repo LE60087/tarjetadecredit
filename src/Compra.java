@@ -1,21 +1,30 @@
-public class Compra {
-    private double valor;
-    private String descrpcion;
+public class Compra implements Comparable<Compra>{
 
-    public Compra(double valor, String descrpcion) {
+    private double valor;
+
+    private String descripcion;
+
+    public Compra(double valor, String descripcion) {
         this.valor = valor;
-        this.descrpcion = descrpcion;
+        this.descripcion = descripcion;
     }
     public double getValor() {
         return valor;
     }
 
-    public String getDescrpcion() {
-        return descrpcion;
+    public String getDescripcion() {
+        return descripcion;
     }
+
     @Override
     public String toString() {
-        return "Compras: valor=" + valor +
-                ", descrpcion='" + descrpcion;
+        return "Compra: valor=" + valor +
+                ", descripcion='" + descripcion + descripcion +"'";
    }
+
+    @Override
+    public int compareTo(Compra otraCompra) {
+        return Double.valueOf(this.valor).compareTo(Double.valueOf(otraCompra.getValor()));
+    }
 }
+

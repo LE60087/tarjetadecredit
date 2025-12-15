@@ -1,4 +1,4 @@
-### IntelliJ IDEA ###
+node_modules
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/

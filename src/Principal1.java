@@ -1,10 +1,9 @@
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
 
-import t static java.lang.Double.valueOf;
+import static java.lang.Double.valueOf;
 
-public class Principal {
+public class Principal1 {
     public static void main(String[] args) {
         Scanner lectura = new Scanner(System.in);
         System.out.println("Escriba el limite de la tarjeta:");
@@ -12,7 +11,7 @@ public class Principal {
         TarjetaDeCredito tarjeta = new  TarjetaDeCredito(limite);
 
         int salir = 1;
-        while(salir == 0){
+        while(salir == 1){
             System.out.println("Escriba la descripcion de la compra:");
             String descripcion = lectura.next();
 
@@ -42,4 +41,3 @@ public class Principal {
 
     }
 }
-  face final del proyecto tengo     que hacer que se haganunalista ordena de las compraas
